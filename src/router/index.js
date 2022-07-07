@@ -20,6 +20,11 @@ const routes = [
     name: "properties",
     component: () => import('../views/Properties.vue'),
   },
+  {
+    path: "/properties",
+    name: "PropertyDetails",
+    component: () => import('../views/PropertyDetails.vue'),
+  },
 ];
 
 const router = createRouter({

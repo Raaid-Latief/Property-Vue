@@ -1,9 +1,11 @@
 <template>
-  <div class="card">
+  <router-link
+  :to="{ name: 'PropertyDetails', params: { id: property.id }}" 
+  class="card">
         <h2>{{property.title}}</h2>
         <p>{{property.type}}</p>
         <p>{{property.location}}</p>
-    </div>
+    </router-link>
 </template>
 <script>
 export default {
